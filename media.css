@@ -1,9 +1,56 @@
 @media only screen and (max-width:1000px){
-    /* .nav-right li{
-        display: block;
-        position: relative;
+    .nav-right ul{
+        padding-top: 100px;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: hsla(229, 31%, 21%, 0.9);
+        transition: 0.5s ease-in-out;
+        z-index: 1000;
+        position: fixed;
         
-    } */
+    }
+    .burger-nav{
+        z-index: 1000;
+    }
+
+
+    .nav-right li {
+        position: relative;
+        z-index: 1000;
+        letter-spacing: 2px;
+        padding: 20px;
+        border-bottom: 1px solid hsl(240, 1%, 33%);
+        width: 100%;
+        text-align: center;
+        
+    }
+    .nav-right button{
+        position: relative;
+        letter-spacing: 2px;
+        padding: 20px;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        margin-top: 19px;
+        font-size: 5vw;
+        
+    }
+    .nav-right a{
+        font-size: 60px!important;
+
+    }
+   /*.burger-nav.active{*/
+   /*     filter: invert(1);*/
+   /*     background: url(images/icon-close.svg);*/
+   /*     background-repeat: no-repeat;*/
+   /*     width: 30px;*/
+   /*     height: 30px;*/
+   /*   }*/
 
     
   
@@ -58,17 +105,66 @@
     
     .slider-text-container p{
         font-size: 4vw;
-        line-height: 30px;
         line-height: 50px;
     }
     .slider-text-container button{
         font-size: 2.7vw;
         
     }
+    .banner-content-btn{
+        text-align: center;
+        width: 100%;
+    }
+    .banner-content-btn button:last-child{
+        padding: 10px 36px;
+        
+    }
+    .main-2{
+        /*margin-top: 300px;*/
+        height: auto;
+    }
+    .main-2-box{
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .main-3 > *{
+        max-width: 100%;
+    }
+    .main-3{
+        padding-left: 0;
+
+
+    }
+    .main-4{
+        flex-direction: column;
+    }
+    .main-4-container{
+        width: 80%;
+    }
+    .main-4-input{
+        flex-direction: column;
+    }
+    .main-4-container input{
+        width: 100%;
+
+    }
+    footer{
+        flex-direction: column;
+        height: 170px;
+    }
+
+ 
+    
 }
 @media only screen and (min-width:1000px){
    
     .burger-nav{
         display: none;
     }
+    .nav-right{
+        display: inline;
+    }
+
+
+
 }

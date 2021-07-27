@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <script
@@ -17,9 +18,9 @@
     <header>
         <nav class="header-nav dis-flex">
             <div class="nav-left">
-                <img src="img/logo-bookmark.svg" alt="">
+                <img src="img/logo-bookmark.svg" alt="" id="img">
             </div>
-            <div class="nav-right">
+            <div class="nav-right dis-none " id="menu">
                 <ul class="header-ul">
                     <li><a href="#">FEATURS</a></li>
                     <li><a href="#">PIRCIG</a></li>
@@ -27,8 +28,11 @@
                     <button class="header-btn">LOGIN</button>
                 </ul>
             </div>
-            <div class="burger-nav">
-                <i class="fa fa-bars"></i>
+            <div class="burger-nav" id="btn">
+                <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="burger-nav" id="btn1">
+                <i class="fas fa-angle-down "></i>
             </div>
 
 
@@ -87,12 +91,12 @@
             </div>
             <div class="list-slider ">
                 <ul>
-                    <li>Simple Bookmarkting</li>
-                    <li>Speedy Searching </li>
-                    <li>Easy Shairing</li>
+                    <li id="click1">Simple Bookmarkting</li>
+                    <li id="click2">Speedy Searching </li>
+                    <li id="click3">Easy Shairing</li>
                 </ul>
             </div>
-            <div class="list-container-slider dis-flex">
+            <div class="list-container-slider dis-flex " id="slid-1">
                 <img src="img/illustration-features-tab-1.svg" alt="">
                 <div class="slider-text-container">
                     <h3>Bookmark in one click</h3>
@@ -104,7 +108,7 @@
     
                 </div>
             </div>
-            <div class="list-container-slider dis-flex">
+            <div class="list-container-slider dis-flex" id="slid-2">
                 <img src="img/illustration-features-tab-2.svg" alt="">
                 <div class="slider-text-container">
                     <h3>Intelligent search</h3>
@@ -116,7 +120,7 @@
     
                 </div>
             </div>
-            <div class=" list-container-slider dis-flex">
+            <div class=" list-container-slider dis-flex" id="slid-3">
                 <img src="img/illustration-features-tab-3.svg" alt="">
                 <div class="slider-text-container">
                     <h3>Bookmark in one click</h3>
@@ -158,8 +162,96 @@
 
 
 
-        <section class="main-2"></section>
-        <section class="main-3"></section>
+        <section class="main-2">
+            <div class="main-2-container dis-flex">
+                <div class="main-2-text">
+                    <h3>Download the extension</h3>
+                    <p>We’ve got more browsers in the pipeline. Please do let us know if <br>
+                        you’ve got a favourite you’d like us to prioritize.</p>
+                </div>
+                <div class="main-2-box dis-flex">
+                    <div class="main-2-box1">
+                        <img src="img/logo-chrome.svg" alt="">
+                        <h3>Add to Chrome</h3>
+                        <p>Minimum version 62</p>
+                        <button> Add && install Extension</button>
+                    </div>
+                    <div class="main-2-box2">
+                        <img src="img/logo-firefox.svg" alt="">
+                        <h3>Add to Chrome</h3>
+                        <p>Minimum version 62</p>
+                        <button> Add && install Extension</button>
+                    </div>
+                    <div class="main-2-box3">
+                        <img src="img/logo-opera.svg" alt="">
+                        <h3>Add to Chrome</h3>
+                        <p>Minimum version 62</p>
+                        <button> Add && install Extension</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="main-3">
+            <div>
+                <h3>Frequently Asked Questions</h3>
+                <p class="p-slid">Here are some of our FAQs. If you have any other questions<br>
+                    you’d like answered please feel free to email us.</p>
+            </div>
+            <div class="main-3-slid ">
+                <p>What is Bookmark?<span> <i class="fas fa-angle-up up-icon1"></i><i class="fas fa-angle-down icon-hidden icon-hidden1"></i></span></p>
+                <p class="p-slid1 dis-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+                    . Fusce tincidunt justo eget ultricies fringilla.<br>
+                    Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+            <div class="main-3-slid ">
+                <p>How can I request a new browser?<span> <i class="fas fa-angle-up up-icon up-icon2"></i><i class="fas fa-angle-down icon-hidden icon-hidden2"></i></span></p>
+                <p class="p-slid2 dis-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+                    . Fusce tincidunt justo eget ultricies fringilla.<br>
+                    Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+            <div class="main-3-slid ">
+                <p>Is there a mobile app? <span> <i class="fas fa-angle-up up-icon up-icon3"></i><i class="fas fa-angle-down icon-hidden icon-hidden3"></i></span></p>
+                <p class="p-slid3 dis-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+                    . Fusce tincidunt justo eget ultricies fringilla.<br>
+                    Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+            <div class="main-3-slid ">
+                <p>What about other Chromium browsers? <span> <i class="fas fa-angle-up  up-icon up-icon4"></i><i class="fas fa-angle-down icon-hidden icon-hidden4"></i></span></p>
+                <p class="p-slid4 dis-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit<br>
+                    . Fusce tincidunt justo eget ultricies fringilla.<br>
+                    Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+            <div>
+                <button>More</button>
+            </div>
+        </section>
+
+        <section class="main-4 dis-flex">
+            <div class="main-4-container">
+                <p>20 ALREADY JOINED</p>
+                <h4>Stay up-to-date with what<br>
+                    we’re doing</h4>
+                <div class="main-4-input dis-flex">
+                    <input type="text" name="" id="">
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -183,6 +275,20 @@
 
 
     </main>
-    <footer></footer>
+    <footer class="dis-flex">
+        <div class="footer-left dis-flex">
+                <img src="img/logo-bookmark.svg" alt="">
+                <p>BOOKMARK</p>
+                <p>FEATURES</p>
+        </div>
+        <div class="footer-right dis-flex">
+            <div>
+                <img src="img/icon-twitter.svg" alt="">
+                <img src="img/icon-facebook.svg" alt="">
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

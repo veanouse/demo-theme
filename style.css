@@ -20,7 +20,6 @@
   }
 
 body{
-    padding: 20px 50px;
     background-color: #334252;
     font-family: one-font;
 }
@@ -40,7 +39,16 @@ a{
 .dis-flex{
     display: flex;
 }
+.dis-none{
+    display: none;
+
+}
+
+
 /*------------------------header-------------*/
+header{
+    padding: 50px;
+}
 .header-nav{
     
     width: 100%;
@@ -111,6 +119,9 @@ a{
     outline: none;
 
 } 
+.burger-nav{
+    font-size: 30px;
+}
 
 .banner-content-btn button:first-child{
     background-color:  #F75940;
@@ -190,3 +201,208 @@ main{
     border-radius: 5px;
 }
 
+/*----------main-2-----------------*/
+.main-2{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+
+}
+.main-2-container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-2-box{
+    width: 70%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-2-box div{
+    border: 1px solid black;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 3px 10px rgba(35,33,34,0.50);
+    border-radius: 5px;
+
+}
+.main-2-box div h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.main-2-box div p{
+    padding-left: 25px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.main-2-box div button{
+    /*font-weight: 500;*/
+    font-size: 15px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+}
+.main-2-box div button:hover {
+
+    background-color: darkgray;
+
+}
+.main-2-box2{
+    margin-top: 50px;
+}
+.main-2-box3{
+    margin-top: 90px;
+}
+.main-2-text > *{
+    margin-top: 20px;
+
+}
+.main-2-text h3{
+    font-size: 20px;
+
+}
+.main-2-text p{
+    font-size: 20px;
+
+}
+/*-------------------------------main-3------------------------*/
+.main-3{
+    padding-left: 30%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+.main-3 > *{
+    max-width: 60%;
+    margin-top: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+.main-3 h3{
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+.main-3-slid p{
+    font-size: 20px;
+    padding-top: 10px;
+    letter-spacing: 1.5px;
+}
+.main-3-slid p:last-of-type{
+
+    padding-top: 50px;
+}
+.main-3-slid p:first-of-type{
+    font-size: 20px;
+
+}
+.main-3 div:last-of-type{
+    border-bottom: none!important;
+}
+.main-3 div button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.4s;
+}
+.main-3 button:hover{
+    background-color: darkgray;
+
+}
+.icon-hidden1,
+.icon-hidden2 ,
+.icon-hidden3 ,
+.icon-hidden4
+{
+    color: #F75940;
+}
+
+/*--------------------------main-4---------------------------*/
+.main-4{
+    width: 100%;
+    background-color: cornflowerblue;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-4-container{
+    text-align: center;
+    color: black;
+}
+.main-4-container p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom:30px ;
+}
+.main-4-container h4{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:30px ;
+    /*margin-top:80px ;*/
+
+}
+.main-4-container input{
+    width: 550px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:10px ;
+    margin-right: 10px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    /*display: none;*/
+}
+.main-4-container button{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:10px ;
+    background-color: coral;
+    transition: background-color 0.4s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.main-4-container button:hover{
+    background-color: darkgray;
+
+}
+/*-------------------footer--------------------*/
+footer{
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+.footer-right img {
+  margin-right: 10px;
+}
+.footer-left > *{
+    margin-left: 10px;
+}
+.footer-left p{
+    font-size: 25px;
+}
